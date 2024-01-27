@@ -82,6 +82,8 @@ void            panic(char*) __attribute__((noreturn));
 void            printfinit(void);
 
 // proc.c
+int is_lazy_alloc_va(uint64);
+int lazy_alloc(uint64);
 int             cpuid(void);
 void            exit(int);
 int             fork(void);
